@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPark - Parkir Cerdas, Hidup Mudah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fas fa-parking"></i></div>
+                SmartPark
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            
+            <div class="nav-buttons" id="guestNav">
+                <a href="#" class="btn-text" id="loginBtn">Masuk</a>
+                <button class="btn btn-primary open-register-btn">Daftar Sekarang</button>
+            </div>
+
+            <div class="nav-buttons" id="userNav" style="display: none;">
+                <div class="user-info">
+                    <span class="avatar"><i class="fas fa-user"></i></span>
+                    <span class="username" id="displayUsername">Halo, Pengguna</span>
+                </div>
+                <a href="#" class="btn-text" id="logoutBtn" style="font-size: 0.8rem; color: #ef4444;">Keluar</a>
+            </div>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge"><i class="fas fa-circle"></i> Solusi Parkir Berbasis AI</span>
+                <h1>Parkir Cerdas,<br><span class="text-blue">Berkendara Nyaman</span></h1>
+                <p>Rasakan masa depan perparkiran dengan deteksi slot real-time, navigasi otomatis, dan pembayaran non-tunai yang mulus.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary open-register-btn">Coba Gratis <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-outline action-demo"><i class="fas fa-play"></i> Tonton Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>500Rb+</strong><span>Pengguna Aktif</span></div>
+                    <div class="stat-item"><strong>10Rb+</strong><span>Titik Parkir</span></div>
+                    <div class="stat-item"><strong>98%</strong><span>Kepuasan</span></div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Smart Parking View">
+                    <div class="float-card card-top-right">
+                        <div class="icon-box bg-blue"><i class="fas fa-wallet"></i></div>
+                        <div><small>Hemat Hari Ini </small><strong>Rp 65.000</strong></div>
+                    </div>
+                    <div class="float-card card-bottom-left">
+                        <div class="icon-box bg-green"><i class="fas fa-arrow-right"></i></div>
+                        <div><small>Slot Tersedia</small><strong> 247 Terdekat</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="badge-pill">Fitur Unggulan</span>
+                <h2>Semua yang Anda Butuhkan</h2>
+                <p>Teknologi canggih bertemu dengan kemudahan penggunaan untuk pengalaman yang mulus.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-circle bg-blue-light text-blue"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Ketersediaan Real-time</h3>
+                    <p>Temukan tempat parkir yang tersedia secara instan dengan pembaruan langsung.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle bg-blue-light text-blue"><i class="fas fa-wallet"></i></div>
+                    <h3>Pembayaran Non-Tunai</h3>
+                    <p>Pembayaran digital yang mulus dengan sistem tagihan otomatis tanpa ribet.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-circle bg-blue-light text-blue"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Keamanan Terjamin</h3>
+                    <p>Pengawasan 24/7 memastikan kendaraan Anda tetap aman dan terlindungi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <span class="badge-pill">Harga & Paket</span>
+                <h2>Transparan & Terjangkau</h2>
+                <p>Pilih paket yang sesuai dengan kebutuhan parkir Anda.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card center">
+                    <h3>Basic</h3>
+                    <h2 class="text-blue">Rp 0<span style="font-size:1rem; color:#666">/bln</span></h2>
+                    <p>Cocok untuk parkir sesekali.</p>
+                    <button class="btn btn-outline open-register-btn" style="margin-top:1rem; width:100%">Pilih Paket</button>
+                </div>
+                <div class="feature-card center" style="border-color: var(--primary-color); box-shadow: 0 10px 15px rgba(0,0,0,0.1);">
+                    <div class="badge" style="margin-bottom:1rem">Paling Laris</div>
+                    <h3>Pro Driver</h3>
+                    <h2 class="text-blue">Rp 250rb<span style="font-size:1rem; color:#666">/bln</span></h2>
+                    <p>Reservasi slot tanpa batas.</p>
+                    <button class="btn btn-primary open-register-btn" style="margin-top:1rem; width:100%">Pilih Paket</button>
+                </div>
+                <div class="feature-card center">
+                    <h3>Bisnis</h3>
+                    <h2 class="text-blue">Rp 750rb<span style="font-size:1rem; color:#666">/bln</span></h2>
+                    <p>Untuk manajemen armada kantor.</p>
+                    <button class="btn btn-outline open-register-btn" style="margin-top:1rem; width:100%">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="about" class="section-padding">
+        <div class="container hero-container">
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Tentang Kami">
+                </div>
+            </div>
+            <div class="hero-content">
+                <span class="badge-pill">Tentang Kami</span>
+                <h2>Merevolusi Mobilitas<br>Perkotaan</h2>
+                <p>Didirikan pada tahun 2024, SmartPark memiliki misi untuk mengurangi kemacetan lalu lintas dan emisi karbon dengan membuat parkir lebih efisien.</p>
+                
+                <button id="learnMoreBtn" class="btn btn-outline action-more">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <span class="badge-pill">Hubungi Kami</span>
+                <h2>Ada Pertanyaan?</h2>
+            </div>
+            <div class="newsletter-box shadow-box" style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 1rem; border: 1px solid #eee;">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama Anda" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan</label>
+                        <textarea rows="3" placeholder="Tulis pesan Anda di sini..." required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container center">
+            <div class="social-icons" style="margin-bottom: 1rem;">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2026 SmartPark Indonesia. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal close-login">&times;</span>
+            <div class="modal-header">
+                <h2>Selamat Datang</h2>
+                <p>Silakan masuk untuk mengelola parkir</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="admin@smartpark.com" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                </div>
+                <div class="form-group">
+                    <label>Kata Sandi</label>
+                    <input type="password" id="password" placeholder="admin123" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal close-register">&times;</span>
+            <div class="modal-header">
+                <h2>Buat Akun Baru</h2>
+                <p>Mulai perjalanan parkir pintar Anda</p>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="regName" placeholder="Budi Santoso" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="regEmail" placeholder="nama@email.com" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                </div>
+                <div class="form-group">
+                    <label>Kata Sandi</label>
+                    <input type="password" id="regPassword" placeholder="Buat kata sandi" required style="width:100%; padding:0.8rem; border:1px solid #ddd; border-radius:0.5rem; margin-bottom:1rem;">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%">Daftar Sekarang</button>
+            </form>
+        </div>
+    </div>
+<div id="aboutModal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 500px;"> <span class="close-modal close-about">&times;</span>
+            <div class="modal-header">
+                <h2>Tentang SmartPark</h2>
+                <p class="text-blue">Inovasi Parkir Masa Depan</p>
+            </div>
+            <div style="text-align: left; color: #4b5563; font-size: 0.95rem; line-height: 1.6;">
+                <p style="margin-bottom: 1rem;">
+                    <strong>Visi Kami:</strong> Menciptakan kota pintar di mana pengemudi tidak perlu lagi membuang waktu dan bahan bakar hanya untuk mencari tempat parkir.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    <strong>Teknologi:</strong> Kami menggunakan sensor IoT canggih dan kamera AI untuk mendeteksi slot kosong secara real-time dengan akurasi 99.9%.
+                </p>
+                <ul style="list-style: disc; margin-left: 1.2rem; margin-bottom: 1.5rem;">
+                    <li>Integrasi Cloud Server</li>
+                    <li>Sistem Keamanan Enkripsi AES-256</li>
+                    <li>Dukungan Multi-Platform (iOS & Android)</li>
+                </ul>
+                <div class="center">
+                    <button class="btn btn-primary close-about-btn" style="width: 100%;">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="demoModal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 800px; width: 90%; padding: 1rem; background: #000;">
+            <div style="text-align: right; margin-bottom: 0.5rem;">
+                <span class="close-modal close-demo" style="color: white; position: static;">&times;</span>
+            </div>
+            <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe id="youtubeVideo" 
+                    src="" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
